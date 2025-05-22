@@ -14,4 +14,5 @@ export default defineConfig({
       ],
     },
   },
+  base: '/land/', // Base path for GitHub Pages
 })
