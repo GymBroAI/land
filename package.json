@@ -2,6 +2,7 @@
   "name": "gymbrosite",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://gymbroai.github.io/land/",
   "type": "module",
   "scripts": {
     "dev": "vite",
