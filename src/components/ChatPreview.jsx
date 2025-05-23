@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import MessageBubble from './MessageBubble';
 
 const ChatPreview = () => {
@@ -26,6 +26,14 @@ const ChatPreview = () => {
   const [isTyping, setIsTyping] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFirstRun, setIsFirstRun] = useState(true);
+  const messageContainerRef = useRef(null);
+  
+  // Function to scroll to bottom of messages
+  const scrollToBottom = () => {
+    if (messageContainerRef.current) {
+      messageContainerRef.current.scrollTop = messageContainerRef.current.scrollHeight;
+    }
+  };
   
   useEffect(() => {
     if (currentIndex < allMessages.length) {
@@ -78,6 +86,11 @@ const ChatPreview = () => {
     
     return () => clearTimeout(initialDelay);
   }, [visibleMessages.length, isFirstRun]);
+  
+  // Scroll to bottom whenever messages or typing state changes
+  useEffect(() => {
+    scrollToBottom();
+  }, [visibleMessages, isTyping]);
   
   const currentTime = "5:01 PM";
 
@@ -141,7 +154,10 @@ const ChatPreview = () => {
         </div>
 
         {/* Chat messages - fixed dimensions container to prevent layout shift */}
-        <div className="overflow-y-auto px-2 pb-1 flex-1 min-h-[380px] w-full">
+        <div 
+          ref={messageContainerRef} 
+          className="overflow-y-auto px-2 pb-1 flex-1 min-h-[380px] w-full scroll-smooth"
+        >
           {/* Empty state placeholder to maintain dimensions when no messages */}
           {visibleMessages.length === 0 && !isTyping && (
             <div className="opacity-0 h-[200px] w-full">
