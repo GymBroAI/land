@@ -6,7 +6,7 @@ const Hero = () => {
     <section id="demo" className="py-16 md:py-24 px-4 overflow-hidden">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between">
-          <div className="lg:w-1/2 mb-12 lg:mb-0">
+          <div className="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right" data-aos-delay="100">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 tracking-tight">
               Your AI Gym Bro.
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
@@ -24,7 +24,7 @@ const Hero = () => {
             </a>
           </div>
           
-          <div className="lg:w-1/2 flex justify-center lg:justify-center items-center">
+          <div className="lg:w-1/2 flex justify-center lg:justify-center items-center" data-aos="fade-up" data-aos-delay="300">
             <div className="relative transform hover:scale-[1.02] transition-transform duration-500">
               {/* Phone glow effect */}
               <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-400 to-purple-500 rounded-[45px] blur opacity-70"></div>

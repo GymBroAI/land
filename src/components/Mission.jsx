@@ -2,36 +2,17 @@ import React from 'react';
 
 const Mission = () => {
   return (
-    <section id="mission" className="py-20 md:py-28 px-4 bg-white">
-      <div className="container mx-auto">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-10 tracking-tight">
-            Make fitness simple, personal, and clear.
-          </h2>
-          
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-16">
-            Built for simplicity. Designed for results. We believe everyone deserves to understand fitness 
-            without feeling overwhelmed or confused.
+    <section className="py-16 md:py-24 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="max-w-3xl mx-auto text-center" data-aos="fade-up">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
+          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-8">
+            We're cutting through the fitness industry BS. No complicated apps. No social media distractions. No endless scrolling through workouts.
           </p>
-          
-          <div className="grid md:grid-cols-2 gap-16 text-left">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">Why we built GymBro</h3>
-              <p className="text-gray-600 leading-relaxed">
-                We were tired of complicated fitness apps and unclear workout advice. So we built a 
-                text-based coach that cuts through the noise and explains fitness in a way that's 
-                personalized to you.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-2xl font-bold mb-4">Who we're building for</h3>
-              <p className="text-gray-600 leading-relaxed">
-                For people who want to get fit but don't have time to navigate complex apps or watch 
-                hour-long tutorial videos. For those who want to understand not just what exercise to do, 
-                but why it matters for their goals.
-              </p>
-            </div>
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+            <p className="text-2xl md:text-3xl font-medium text-blue-600 italic">
+              "Just text. Get results."
+            </p>
           </div>
         </div>
       </div>
