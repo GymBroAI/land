@@ -18,9 +18,9 @@ function App() {
       <footer className="bg-gray-100 py-6">
         <div className="container mx-auto text-center text-sm text-gray-500">
           <p>© 2025 GymBro. All rights reserved.</p>
-        </div>
+      </div>
       </footer>
-    </div>
+      </div>
   )
 }
 

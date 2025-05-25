@@ -5,18 +5,18 @@
 @layer base {
   body {
     @apply antialiased text-gray-800;
-  }
+}
 }
 
 @layer components {
   .message-bubble {
     @apply rounded-2xl px-4 py-2 max-w-xs;
-  }
-  
+}
+
   .user-bubble {
     @apply message-bubble bg-blue-500 text-white ml-auto;
-  }
-  
+}
+
   .gymBro-bubble {
     @apply message-bubble bg-gray-200 mr-auto;
   }
@@ -26,11 +26,11 @@
   /* iPhone-style bubble tails */
   .rounded-tr-none {
     border-top-right-radius: 0;
-  }
+}
   
   .rounded-tl-none {
     border-top-left-radius: 0;
-  }
+}
   
   /* Animation delays for typing indicator */
   .delay-0 {

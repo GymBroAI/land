@@ -9,8 +9,8 @@ const Hero = () => {
           <div className="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-right" data-aos-delay="100">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 tracking-tight">
               Your AI Gym Bro.
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
-                In Your Pocket.
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 pb-1 leading-normal">
+                Using iMessage.
               </span>
             </h1>
             <p className="text-gray-600 text-lg md:text-xl mb-8 max-w-lg">
